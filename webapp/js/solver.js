@@ -1,12 +1,13 @@
 function start() {
-    alert("PUTO");
+    alert("Starting");
     debugger;
     var analyzedGrid = analyze(boot());
     debugger;
 }
+
 function boot() {
     var i, j;
-    var grid = []
+    var grid = [];
 
     for (i = 0; i <= 9; i++)
         grid.push(null);
@@ -267,7 +268,7 @@ function extractor(includedElements) {
 
 function analyze(grid) {
     debugger;
-    var i, j, k, l, results, quad,quadEnum=0;
+    var i, j, k, l, results, quad, quadEnum = 0;
     grid[0][0] = {};
     grid[0][0] = {};
     // Analize rows
@@ -308,8 +309,8 @@ function analyzeRow(row) {
     }
 
 }
-function cellPossibles(row,col,grid){
-    var rowPossibles,colPossibles,qPossibles;
+function cellPossibles(row, col, grid) {
+    var rowPossibles, colPossibles, qPossibles;
 
     rowPossibles = grid[row][0].out;
     colPossibles = grid[0][col]
